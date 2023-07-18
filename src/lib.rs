@@ -172,3 +172,11 @@ pub fn markdown_to_commonmark_xml_with_plugins(
     format_xml_with_plugins(root, options, &mut bw, plugins).unwrap();
     String::from_utf8(bw.into_inner().unwrap()).unwrap()
 }
+
+use wasm_bindgen::prelude::*;
+
+#[wasm_bindgen]
+/// 42
+pub fn hello() -> i32 {
+    42
+}
