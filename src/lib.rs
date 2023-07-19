@@ -175,8 +175,8 @@ pub fn markdown_to_commonmark_xml_with_plugins(
 
 use wasm_bindgen::prelude::*;
 
+/// export to wasm
 #[wasm_bindgen]
-/// 42
-pub fn hello() -> i32 {
-    42
+pub fn markdown_to_html_default() -> String {
+    markdown_to_html("ss", &Options::default())
 }
